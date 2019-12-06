@@ -7,17 +7,17 @@
         <button @click="selectPreviousHead" class="prev-selector">&#9668;</button>
         <button @click="selectNextHead" class="next-selector">&#9658;</button>
       </div> -->
-      <PartSelector />
+      <PartSelector :parts="availableParts.heads" position="top" />
 
     </div>
     <div class="middle-row">
-      <PartSelector />
-      <PartSelector />
-      <PartSelector />
+      <PartSelector :parts="availableParts.arms" position="left"/>
+      <PartSelector :parts="availableParts.torsos" position="center" />
+      <PartSelector :parts="availableParts.arms" position="right"/>
    
     </div>
     <div class="bottom-row">
-      <PartSelector />
+      <PartSelector :parts="availableParts.bases" position="bottom"/>
     </div>
 
     <div>
